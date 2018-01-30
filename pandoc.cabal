@@ -667,6 +667,7 @@ test-suite test-pandoc
                   Tests.Writers.LaTeX
                   Tests.Writers.Docx
                   Tests.Writers.RST
+                  Tests.Writers.RTF
                   Tests.Writers.TEI
                   Tests.Writers.Muse
                   Tests.Writers.FB2
