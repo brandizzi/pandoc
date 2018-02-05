@@ -18,5 +18,10 @@ tests = [ testGroup "Paragraph"
           , test rtf "paragraph" $
                (para $ text "foo") =?>
                  "{\\pard \\ql \\f0 \\sa180 \\li0 \\fi0 foo\\par}"
+          ],
+          testGroup "Lists"
+          [ test rtf "use \\list" $
+            (bulletList $ [ para $ text "foo" ]) =?>
+                "\\list foo"
           ]
         ]
